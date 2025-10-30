@@ -1,0 +1,86 @@
+/* Fonte e fundo */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container centralizado */
+.container {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 50px 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.7);
+  width: 350px;
+}
+
+/* Título */
+h1 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #f0f0f0;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+/* Input do nome */
+input {
+  padding: 12px;
+  width: 90%;
+  font-size: 16px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  background-color: rgba(255,255,255,0.1);
+  color: #fff;
+  transition: background 0.3s;
+}
+
+input:focus {
+  background-color: rgba(255,255,255,0.2);
+}
+
+/* Botão do LED */
+#ledBtn {
+  width: 180px;
+  height: 70px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+#ledBtn:active {
+  transform: scale(0.95);
+}
+
+/* Status do LED */
+#statusTxt {
+  font-size: 18px;
+  font-weight: 500;
+  color: #e0e0e0;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+/* Cores para LED */
+.ligado {
+  background-color: #4CAF50; /* verde */
+  color: #fff;
+}
+
+.desligado {
+  background-color: #F44336; /* vermelho */
+  color: #fff;
+}
